@@ -38,7 +38,7 @@ The final model used was:
 - **R² Score**: ~0.97 on the test dataset
 
 ## 📁 Files
-- `AirQuality_CO_Prediction.ipynb`: Jupyter Notebook with full preprocessing, feature engineering, and model training
+- `Final_Model.ipynb`: Jupyter Notebook with full preprocessing, feature engineering, and model training
 - `requirements.txt`: Dependencies to install
 - `model.pkl`: Trained model file for inference
 
