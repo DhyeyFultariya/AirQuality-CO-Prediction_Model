@@ -42,7 +42,3 @@ The final model used was:
 - `requirements.txt`: Dependencies to install
 - `model.pkl`: Trained model file for inference
 
-## 🚀 How to Run
-```bash
-pip install -r requirements.txt
-jupyter notebook
