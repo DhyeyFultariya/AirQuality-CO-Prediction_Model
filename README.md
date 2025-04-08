@@ -20,6 +20,7 @@ The following engineered and selected features were used in the final model:
 - `CO_lag_2`
 - `PT08.S4(NO2)`
 - `CO_rolling_std_3`
+- `Hour`
 
 ## 🔧 Tools & Libraries
 - Python
@@ -34,12 +35,12 @@ The final model used was:
 - Evaluation Metric: R² Score
 
 ## 📈 Results
-- **R² Score**: ~0.92 on the test dataset
+- **R² Score**: ~0.97 on the test dataset
 
 ## 📁 Files
 - `AirQuality_CO_Prediction.ipynb`: Jupyter Notebook with full preprocessing, feature engineering, and model training
 - `requirements.txt`: Dependencies to install
-- (Optional) `model.pkl`: Trained model file for inference
+- `model.pkl`: Trained model file for inference
 
 ## 🚀 How to Run
 ```bash
