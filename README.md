@@ -1,4 +1,3 @@
-readme_content = """
 # Air Quality CO(GT) Prediction Model
 
 ## 📊 Dataset
