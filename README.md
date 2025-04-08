@@ -22,6 +22,13 @@ The following engineered and selected features were used in the final model:
 - `CO_rolling_std_3`
 - `Hour`
 
+## 🛠️ Steps
+- Data Cleaning (`-200` values replaced/dropped)
+- Feature Engineering (lags, rolling means)
+- Correlation-based feature selection
+- Model Training using Random Forest Regressor
+- Evaluation using MAE, RMSE, R²
+
 ## 🔧 Tools & Libraries
 - Python
 - Pandas, NumPy
@@ -41,4 +48,8 @@ The final model used was:
 - `Final_Model.ipynb`: Jupyter Notebook with full preprocessing, feature engineering, and model training
 - `requirements.txt`: Dependencies to install
 - `model.pkl`: Trained model file for inference
+
+---
+
+Made with ❤️ for learning and research.
 
