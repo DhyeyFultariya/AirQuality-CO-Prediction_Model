@@ -54,7 +54,7 @@ with col1:
 
 with col2:
     st.subheader("🏳️‍🌈 Correlation of 'CO' to Others")
-    st.image("./Plots/Corr_to_CO.png", caption="Histogram of All Features", use_container_width=True)
+    st.image("./Plots/Corr_to_CO.png", caption="Correlation of 'CO' to Others", use_container_width=True)
 
 # Display Cleaned Dataset
 st.subheader("🗃️ Cleaned Dataset (Top 10 Rows)")
