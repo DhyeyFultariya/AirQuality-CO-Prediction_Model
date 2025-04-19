@@ -14,6 +14,9 @@ df = pd.read_csv("Cleaned_AirQuality_Data.csv")  # replace with actual file path
 st.set_page_config(layout="wide")  
 st.title("📊 Air Quality Prediction Dashboard")
 st.write("This dashboard predicts **CO(GT)** (Carbon Monoxide level) using sensor data.")
+st.sidebar.markdown("<h6>CO_rolling_mean_3 = Mean of CO of the last 3 hours</h6>", unsafe_allow_html=True)
+st.sidebar.markdown("<h6>CO_rolling_std_3 = Standard Deviation of CO of the last 3 hours</h6>", unsafe_allow_html=True)
+st.sidebar.markdown("<h6>CO_lag_1 = CO of the previous hour</h6>", unsafe_allow_html=True)
 
 # Sidebar: Prediction Input
 st.sidebar.title("📥 Predict CO(GT)")
@@ -45,15 +48,18 @@ with col2:
 
 st.subheader("⭐ CO(GT) Important Features")
 st.image("./Plots/Feature_Imp.png", caption="Feature Importance for CO(GT)", use_container_width=True)
+st.write("- CO_rolling_mean_3 = Mean of CO of the last 3 hours")
+st.write("- CO_rolling_std_3 = Standard Deviation of CO of the last 3 hours")
+st.write("- CO_lag_1 = CO of the previous hour")
 
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("🏳️‍🌈 Correlation Heatmap")  
+    st.subheader("📊 Correlation Heatmap")  
     st.image("./Plots/All_Corr.png", caption="Correlation Heatmap of Features", use_container_width=True)
 
 with col2:
-    st.subheader("🏳️‍🌈 Correlation of 'CO' to Others")
+    st.subheader("📊 Correlation of 'CO' to Others")
     st.image("./Plots/Corr_to_CO.png", caption="Correlation of 'CO' to Others", use_container_width=True)
 
 # Display Cleaned Dataset
