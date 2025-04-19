@@ -14,13 +14,14 @@ df = pd.read_csv("Cleaned_AirQuality_Data.csv")  # replace with actual file path
 st.set_page_config(layout="wide")  
 st.title("📊 Air Quality Prediction Dashboard")
 st.write("This dashboard predicts **CO(GT)** (Carbon Monoxide level) using sensor data.")
-st.sidebar.markdown("<h6>CO_rolling_mean_3 = Mean of CO of the last 3 hours</h6>", unsafe_allow_html=True)
-st.sidebar.markdown("<h6>CO_rolling_std_3 = Standard Deviation of CO of the last 3 hours</h6>", unsafe_allow_html=True)
-st.sidebar.markdown("<h6>CO_lag_1 = CO of the previous hour</h6>", unsafe_allow_html=True)
 
 # Sidebar: Prediction Input
 st.sidebar.title("📥 Predict CO(GT)")
 st.sidebar.markdown("Enter sensor values below to predict Carbon Monoxide level:")
+st.sidebar.markdown("<h6>CO_rolling_mean_3 = Mean of CO of the last 3 hours</h6>", unsafe_allow_html=True)
+st.sidebar.markdown("<h6>CO_rolling_std_3 = Standard Deviation of CO of the last 3 hours</h6>", unsafe_allow_html=True)
+st.sidebar.markdown("<h6>CO_lag_1 = CO of the previous hour</h6>", unsafe_allow_html=True)
+
 features = [    
     'CO_rolling_mean_3','CO_lag_1','C6H6(GT)','PT08.S2(NMHC)','NOx(GT)','PT08.S1(CO)','PT08.S5(O3)','NO2(GT)','CO_lag_2','PT08.S4(NO2)','CO_rolling_std_3','Hour']
 user_inputs = [st.sidebar.number_input(f"{feature}", step=0.01) for feature in features]
