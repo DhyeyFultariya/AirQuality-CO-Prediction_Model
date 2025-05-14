@@ -48,7 +48,7 @@ The final model used was:
 - `requirements.txt`: Dependencies to install
 - `model.pkl`: Trained model file for inference
 - `Dashboard.py`: Dashboard code, Use streamlit for generate Dashboard. For show dashboard, Run "streamlit run Dashboard.py" in terminal.
-- View Dashboard(https://airquality-co-predictionmodel-tesk9xly3yvu3pnql6mk6b.streamlit.app)
+- [View Dashboard](https://airquality-co-predictionmodel-tesk9xly3yvu3pnql6mk6b.streamlit.app)
 ---
 
 Made with ❤️ for learning and research.
